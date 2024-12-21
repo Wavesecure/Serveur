@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/bq.php",
+      "use": "@vercel/php"
+    },
+    {
+      "src": "api/cat.php",
+      "use": "@vercel/php"
+    },
+    {
+      "src": "api/ma.php",
+      "use": "@vercel/php"
+    },
+    {
+      "src": "api/proc.php",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/bq",
+      "dest": "/api/bq.php"
+    },
+    {
+      "src": "/api/cat",
+      "dest": "/api/cat.php"
+    },
+    {
+      "src": "/api/ma",
+      "dest": "/api/ma.php"
+    },
+    {
+      "src": "/api/proc",
+      "dest": "/api/proc.php"
+    }
+  ]
+}
